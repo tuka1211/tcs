@@ -398,9 +398,11 @@ img.people {
 
 /* social media background */
 .socmed-bg-facebook {
-    background: #3b5999;
+    background: #ffff00;
 }
-
+.socmed-bg-snapchat {
+    background: #ffff00;
+}
 .socmed-bg-twitter {
     background: #55acee;
 }
