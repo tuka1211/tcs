@@ -362,7 +362,7 @@ img.people {
     color: #fff;
     margin-bottom: 10px;
 }
-
+ 
 /*color icon*/
 .icon-color .col:nth-child(1) i {
     background: #E74856;
@@ -390,9 +390,11 @@ img.people {
 
 /* social media background */
 .socmed-bg-facebook {
-    background: #3b5999;
+    background: #;
 }
-
+.socmed-bg-snapchat {
+    background: #ffff00;
+}
 .socmed-bg-twitter {
     background: #55acee;
 }
