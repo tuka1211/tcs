@@ -56,6 +56,14 @@ var routes = [
     path: '/blog/',
     url: './pages/blog.html',
   },
+    {
+    path: '/web/',
+    url: './pages/web.html',
+  },
+  {
+    path: '/web1/',
+    url: './pages/web1.html',
+  },
   {
     path: '/blog-single/',
     url: './pages/blog-single.html',
@@ -87,6 +95,10 @@ var routes = [
    {
     path: '/what/',
     url: './pages/what.html',
+  },
+  {
+    path: '/visa/',
+    url: './pages/visa.html',
   },
   {
     path: '/features/',
