@@ -64,8 +64,8 @@ var routes = [
     path: '/web1/',
     url: './pages/web1.html',
   },
-    {
-    path: '/py/',
+   {
+    path: '/python/',
     url: './pages/python.html',
   },
   {
