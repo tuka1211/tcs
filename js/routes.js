@@ -133,7 +133,7 @@ var routes = [
     url: './pages/services.html',
   },
   {
-    path: '/skill/',
+    path: '/appios/',
     url: './pages/skill.html',
   },
 	{
