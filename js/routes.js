@@ -88,6 +88,10 @@ var routes = [
     path: '/jb/',
     url: './pages/jb.html',
   },
+	{
+    path: '/apple/',
+    url: './pages/apple.html',
+  },
       {
     path: '/andr/',
     url: './pages/andr.html',
@@ -132,6 +136,10 @@ var routes = [
     path: '/skill/',
     url: './pages/skill.html',
   },
+	{
+    path: '/ios/',
+    url: './pages/skill1.html',
+			},	
   {
     path: '/walkthrough/',
     url: './apps/walkthrough.html',
