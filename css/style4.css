@@ -101,6 +101,11 @@ p:last-child {
     margin-bottom: 0;
 }
 
+.bb{
+	
+	background-image: url(https://saurd.com/wp-content/uploads/2021/04/1-9.jpg);
+}
+
 a {
     color: #000000;
 }
@@ -2132,6 +2137,18 @@ body {
 #github {
 	fill: #333;
 }
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+			}
+
+
+
 
 
 
