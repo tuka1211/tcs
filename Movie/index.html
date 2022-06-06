@@ -29,176 +29,44 @@
       <div class="banner--fadeBottom"></div>
     </header>
 
-    <!-- Netflix Originals -->
-    <div class="row">
-					<center>
-      <h2>✅ الاسلوب الخرافي   </h2>
-					</center>
-      <div class="row__posters">
-							
-        <a href="la-casa.html"><img class="row__poster row__posterLarge" src="https://upload.wikimedia.org/wikipedia/ar/b/b7/%D9%85%D9%84%D8%B5%D9%82_%D8%A8%D9%8A%D8%AA_%D8%A7%D9%84%D9%85%D8%A7%D9%84.jpg" alt="Mountain View" style="width:150px;height:250px;"/></a>
+    
 
-								        <a href="la-casa.html"><img class="row__poster row__posterLarge" src="https://upload.wikimedia.org/wikipedia/ar/b/b7/%D9%85%D9%84%D8%B5%D9%82_%D8%A8%D9%8A%D8%AA_%D8%A7%D9%84%D9%85%D8%A7%D9%84.jpg" alt="Mountain View" style="width:150px;height:250px;"/></a>
-								        <a href="la-casa.html"><img class="row__poster row__posterLarge" src="https://upload.wikimedia.org/wikipedia/ar/b/b7/%D9%85%D9%84%D8%B5%D9%82_%D8%A8%D9%8A%D8%AA_%D8%A7%D9%84%D9%85%D8%A7%D9%84.jpg" alt="Mountain View" style="width:150px;height:250px;"/></a>
-																        <a href="la-casa.html"><img class="row__poster row__posterLarge" src="https://upload.wikimedia.org/wikipedia/ar/b/b7/%D9%85%D9%84%D8%B5%D9%82_%D8%A8%D9%8A%D8%AA_%D8%A7%D9%84%D9%85%D8%A7%D9%84.jpg" alt="Mountain View" style="width:150px;height:250px;"/></a>
-																								        <a href="la-casa.html"><img class="row__poster row__posterLarge" src="https://upload.wikimedia.org/wikipedia/ar/b/b7/%D9%85%D9%84%D8%B5%D9%82_%D8%A8%D9%8A%D8%AA_%D8%A7%D9%84%D9%85%D8%A7%D9%84.jpg" alt="Mountain View" style="width:150px;height:250px;"/></a>
-      </div>
-    </div>
+     <script>
+     (function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
 
-    <!-- Trending Now -->
-    <div class="row">
-      <h2>Trending Now</h2>
-      <div class="row__posters">
-        <img class="row__poster" src="https://sm.ign.com/ign_mear/screenshot/default/pubg-mobile-1_jyeq.png" alt="" />
+  let birthday = "Oct 10, 2021 00:00:00",
+      countDown = new Date(birthday).getTime(),
+      x = setInterval(function() {    
 
-        <img class="row__poster" src="https://cdn.al-ain.com/images/2021/3/05/140-210507-pubg-new-state_700x400.jpg" alt="" />
+        let now = new Date().getTime(),
+            distance = countDown - now;
 
-        <img class="row__poster" src="https://yemenscope.com/user_images/news/15-11-20-823320544.jpg" alt="" />
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
 
-        <img class="row__poster" src="images/small-movie4.jpg" alt="" />
+        //do something later when date is reached
+        if (distance < 0) {
+          let headline = document.getElementById("headline"),
+              countdown = document.getElementById("countdown"),
+              content = document.getElementById("content");
 
-        <img class="row__poster" src="images/small-movie5.jpg" alt="" />
+          headline.innerText = "It's my birthday!";
+          countdown.style.display = "none";
+          content.style.display = "block";
 
-        <img class="row__poster" src="images/small-movie6.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie7.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie8.jpg" alt="" />
-      </div>
-    </div>
-
-    <!-- Top Rated -->
-    <div class="row">
-      <h2>Top Rated</h2>
-      <div class="row__posters">
-        <img class="row__poster" src="images/small-movie1.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie2.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie3.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie4.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie5.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie6.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie7.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie8.jpg" alt="" />
-      </div>
-    </div>
-
-    <!-- Action Movies -->
-    <div class="row">
-      <h2>Action Movies</h2>
-      <div class="row__posters">
-        <img class="row__poster" src="images/small-movie1.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie2.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie3.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie4.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie5.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie6.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie7.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie8.jpg" alt="" />
-      </div>
-    </div>
-
-    <!-- Comedy Movies -->
-    <div class="row">
-      <h2>Comedy Movies</h2>
-      <div class="row__posters">
-        <img class="row__poster" src="images/small-movie1.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie2.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie3.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie4.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie5.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie6.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie7.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie8.jpg" alt="" />
-      </div>
-    </div>
-
-    <!-- Horror Movies -->
-    <div class="row">
-      <h2>Horror Movies</h2>
-      <div class="row__posters">
-        <img class="row__poster" src="images/small-movie1.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie2.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie3.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie4.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie5.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie6.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie7.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie8.jpg" alt="" />
-      </div>
-    </div>
-
-    <!-- Romance Movies -->
-    <div class="row">
-      <h2>Romance Movies</h2>
-      <div class="row__posters">
-        <img class="row__poster" src="images/small-movie1.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie2.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie3.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie4.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie5.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie6.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie7.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie8.jpg" alt="" />
-      </div>
-    </div>
-
-    <!-- Documentaries -->
-    <div class="row">
-      <h2>Documentaries</h2>
-      <div class="row__posters">
-        <img class="row__poster" src="images/small-movie1.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie2.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie3.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie4.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie5.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie6.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie7.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie8.jpg" alt="" />
-      </div>
-    </div>
-
+          clearInterval(x);
+        }
+        //seconds
+      }, 0)
+  }());
+     
+     </script>
     <script>
       const nav = document.getElementById('nav');
       window.addEventListener('scroll', () => {
