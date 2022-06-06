@@ -1,35 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Netflix Clone</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- nav -->
-    <div id="nav" class="nav">
-      <img class="nav__logo" src="https://i.top4top.io/p_2290yxe2i0.png" alt="" />
-      <img class="nav__avatar" src="https://www.pngplay.com/wp-content/uploads/11/PUBG-PNG-HD-Free-File-Download.png" alt="" />
-    </div>
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" href="style.css">
+    <title>TUKA TCS </title> 
+  </head> 
 
-    <!-- header -->
-    <header class="banner">
-      <div class="banner__contents">
-        <h1 class="banner__title">TUKA PUBG MOBAIL</h1>
-        <div class="banner__buttons">
-          <button class="banner__button">استمتع</button>
-          <button class="banner__button">شاهد الحسابات</button>
-        </div>
-        <h1 class="banner__description">
-									عرض حسابات ببجي للبيع الموقع الان قيد التطوير في وقت الانتهاء منه سيتم فتح استقبال الطلبات
-        </h1>
-      </div>
-      <div class="banner--fadeBottom"></div>
-    </header>
+  <body> 
 
-    
+
+
+<div class="container">
+  <h1>TUKA TCS</h1>
+  <h1 id="headline">العد التنازلي لإطلاق الموقع الخاص بي</h1>
+  <div id="countdown">
+    <ul>
+      <li><span id="days"></span>يوم</li>
+      <li><span id="hours"></span>ساعة</li>
+      <li><span id="minutes"></span>دقيقة</li>
+      <li><span id="seconds"></span>ثانية</li>
+    </ul>
+  </div>
+  <div id="content" class="emoji">
+    <span>🥳</span>
+    <span>🎉</span>
+    <span>🎂</span>
+  </div>
+</div>
+     
+     
+     
+     
+
 
      <script>
      (function () {
@@ -67,15 +69,3 @@
   }());
      
      </script>
-    <script>
-      const nav = document.getElementById('nav');
-      window.addEventListener('scroll', () => {
-        if (window.scrollY >= 100) {
-          nav.classList.add('nav__black');
-        } else {
-          nav.classList.remove('nav__black');
-        }
-      });
-    </script>
-  </body>
-		</html>
