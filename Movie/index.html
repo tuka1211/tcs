@@ -1,74 +1,39 @@
-<!DOCTYPE html> 
-<html> 
-  <head> 
-    <meta charset="utf-8"> 
-    <link rel="stylesheet" href="style.css">
-    <title> 🍿 MOVIES 🎥  </title> 
-  </head> 
+<!DOCTYPE html>
+<html>
 
-  <body style="{
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        div {
             background: rgba(0, 0, 0, 0.2) none repeat scroll !important;/ * rgba (0 ، 0 ، 0 ، 0.2) الثلاثة الأولى تحدد اللون ، وآخر 0.2 يحدد الشفافية * /
-            / * تحقيق خلفية فايرفوكس شفافة ، نص معتم * /"> 
-
-
-
-<div class="container">
-  <h1>Movies 🍿 </h1>
-  <h1 id="headline">العد التنازلي لإطلاق البوت  </h1>
-		<p style="font-size:50px;color:#000ff8;">انتظرونا راح نعجبكم بالتحديث القادم</p>
-  <div id="countdown">
-    <ul>
-      <li><span id="days"></span>يوم</li>
-      <li><span id="hours"></span>ساعة</li>
-      <li><span id="minutes"></span>دقيقة</li>
-      <li><span id="seconds"></span>ثانية</li>
-    </ul>
-  </div>
-  <div id="content" class="emoji">
-    <span>🥳</span>
-    <span>🎉</span>
-    <span>🎂</span>
-  </div>
-</div>
-     
-     
-     
-     
-
-
-     <script>
-     (function () {
-  const second = 1000,
-        minute = second * 60,
-        hour = minute * 60,
-        day = hour * 24;
-
-  let birthday = "Jun 15, 2022 00:00:00",
-      countDown = new Date(birthday).getTime(),
-      x = setInterval(function() {    
-
-        let now = new Date().getTime(),
-            distance = countDown - now;
-
-        document.getElementById("days").innerText = Math.floor(distance / (day)),
-          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
-
-        //do something later when date is reached
-        if (distance < 0) {
-          let headline = document.getElementById("headline"),
-              countdown = document.getElementById("countdown"),
-              content = document.getElementById("content");
-
-          headline.innerText = "It's my birthday!";
-          countdown.style.display = "none";
-          content.style.display = "block";
-
-          clearInterval(x);
+            / * تحقيق خلفية فايرفوكس شفافة ، نص معتم * /
+            background: #ffffff;
+            filter: Alpha(opacity=20);
+            / * تنفيذ خلفية IE شفافة ، نص معتم * /
+            width: 200px;
+            height: 300px;
+            color: #000000;
+            font-size: 20px;
+            font-weight: bold;
         }
-        //seconds
-      }, 0)
-  }());
-     
-     </script>
+
+        div p {
+            position: relative;
+        }
+
+        / * تنفيذ نص معتم في IE * /
+    </style>
+</head>
+
+<body>
+    <div>
+        <p style="position: relative;">هذا div بخلفية شفافة ولكن محتوى غير شفاف</p>
+    </div>
+</body>
+
+
+</html>
